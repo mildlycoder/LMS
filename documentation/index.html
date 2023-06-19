@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Edmy - Learning Management System</title>
+		<link href="css/collection.css" rel="stylesheet" />
+		<link href="css/custom.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="js/other.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+
+	<body data-spy="scroll" data-target=".sidebar" data-offset="50">
+		<aside class="sidebar sidebar-boxed sidebar-dark">
+			<ul class="nav sidenav dropable">
+				<li>
+					<a href="#getting_started" title="Getting Started"
+						>Introduction</a
+					>
+				</li>
+				<li>
+					<a href="#system_requirements" title="System Requirements"
+						>System Requirements</a
+					>
+				</li>
+				<li>
+					<a href="#app_requirements" title="Application Requirements"
+						>Application Requirements</a
+					>
+				</li>
+				<li>
+					<a
+						href="#quick_installation"
+						title="Quick Installation Guide"
+						>Quick Installation Guide</a
+					>
+				</li>
+				<li>
+					<a
+						href="#setup_dev_env"
+						title="Setup Development Envrionment"
+						>Setup Development Environment</a
+					>
+				</li>
+				<li><a href="#nextjs_new">New To Next.js?</a></li>
+				<li><a href="#production_deploy">Deploy in Production</a></li>
+				<li><a href="#supports" title="Support">Support</a></li>
+			</ul>
+		</aside>
+
+		<header class="site-header navbar-transparent">
+			<div class="banner auto-size" style="background-color: #455aa2">
+				<div class="container-fluid">
+					<h1><strong>Edmy - LMS</strong> Documentation</h1>
+				</div>
+			</div>
+		</header>
+
+		<main class="container-fluid">
+			<article class="main-content" role="main">
+				<section id="getting_started">
+					<div class="page-header">
+						<h3>Introduction</h3>
+					</div>
+					<p>
+						Greetings! It is incredible that you decided to purchase
+						Edmy React and Next.js-based Learning Management System!
+						No doubt, you will join our happy customer community in
+						seconds! You would find the steps for up and running
+						with the Edmy super easy.
+					</p>
+					<p>
+						Our detailed documentation will guide you through the
+						detailed process. We have outlined all the necessary
+						information and keep it easy to read and follow.
+					</p>
+					<p>
+						If you cannot find your answer in this documentation, do
+						not hesitate to submit a support ticket by visiting the
+						<a
+							href="https://support.hibootstrap.com/"
+							target="_blank"
+							>HiBootstrap Support System</a
+						>. Our top-notch support team is highly enthusiastic
+						about solving your issue as soon as possible.
+					</p>
+				</section>
+
+				<section id="system_requirements">
+					<div class="page-header">
+						<h3>System Requirements</h3>
+					</div>
+					<ul>
+						<li>
+							<a href="https://nodejs.org/en/" target="_blank"
+								>Node.js v12.22.0</a
+							>
+							or later
+						</li>
+						<li>
+							macOS, Windows (including WSL), and Linux are
+							supported
+						</li>
+					</ul>
+				</section>
+
+				<section id="app_requirements">
+					<div class="page-header">
+						<h3>Application Requirements</h3>
+					</div>
+					<ul>
+						<li>
+							<a
+								href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/zw0lotpiyne8bldc4sut"
+								target="_blank"
+								>Cloudinary Account</a
+							>
+							<ul>
+								<li>
+									What is Cloudinary?
+									<ul>
+										<li>
+											Cloudinary provides cloud-based
+											image and video management services.
+											It enables users to upload, store,
+											manage, manipulate, and deliver
+											photos and videos for websites and
+											apps.
+										</li>
+										<li>
+											And it’s free; you can register from
+											here.
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="https://stripe.com/" target="_blank"
+								>Stripe</a
+							>
+							Developer Account.
+							<ul>
+								<li>
+									And create a publishable key & Secret Key.
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="https://www.mysql.com/" target="_blank"
+								>MySQL</a
+							>
+							<ul>
+								<li>
+									MySQL is an open-source relational database
+									management system.
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section id="quick_installation">
+					<div class="page-header">
+						<h3>Quick Installation Guide</h3>
+					</div>
+					<ul>
+						<li>
+							Create Database & Import included SQL file that
+							comes with the Edmy <code>zip</code> file.
+						</li>
+						<li>
+							Open the terminal window into the
+							<code>edmy-react-next</code>
+							folder.
+						</li>
+						<li>Run <code>npm install</code>.</li>
+						<li>Run <code>npm run dev</code>.</li>
+						<li>
+							Open the browser and copy paste the link-
+							<code>http://localhost:3000</code> in the browser
+							address bar.
+						</li>
+						<li>The website will load, and the process is done!</li>
+					</ul>
+				</section>
+
+				<section id="setup_dev_env">
+					<div class="page-header">
+						<h3>Setup Development Environment</h3>
+					</div>
+
+					<h4>Application Install Preparation</h4>
+
+					<ul>
+						<li>
+							Install
+							<a href="https://nodejs.org/en/" target="_blank"
+								>Node.js</a
+							>
+							<ul>
+								<li>
+									NodeJS works as a node package manager
+									behind the scene. It is recommended to
+									download and install the latest version of
+									Node.js.
+								</li>
+							</ul>
+						</li>
+						<li>Install WAMP for MySQL/PHPMyAdmin.</li>
+						<li>
+							Create
+							<a
+								href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/zw0lotpiyne8bldc4sut"
+								target="_blank"
+								>Cloudinary</a
+							>
+							Account And Follow the below screenshots.
+						</li>
+					</ul>
+
+					<img src="img/cloudinary-1.png" alt="" /><br /><br />
+					<img src="img/cloudinary-2.png" alt="" />
+
+					<br /><br />
+					<em
+						>1.
+						https://api.cloudinary.com/v1_1/cloud-name/image/upload</em
+					>
+					<br />
+					<em
+						>2.
+						https://api.cloudinary.com/v1_1/cloud-name/video/upload</em
+					>
+					<br />
+
+					<ul>
+						<li>
+							Create
+							<a
+								href="https://stripe.com/en-gb-us"
+								target="_blank"
+								>Stripe</a
+							>
+							Account
+						</li>
+
+						<p>
+							Now from the application root directory, open the
+							<strong>next.config.js</strong> file using your code
+							editor and update like below-
+						</p>
+						<code class="language-markup">
+							CLOUDINARY_URL: "https://api.cloudinary.com......",
+							CLOUDINARY_VIDEO_URL:
+							"https://api.cloudinary.com......",
+							STRIPE_SECRET_KEY: "sk_test_3D..........",
+							STRIPE_PUBLISHABLE_KEY: "pk_test_Zy........"
+						</code>
+					</ul>
+					<br />
+					<h4>Finish Setup & Run the App</h4>
+
+					<p>
+						Now, open the terminal and cd to your project root
+						folder. After that, you need to run the following
+						commands-
+					</p>
+					<code> npm install </code>
+					<br />
+					<code> npm run dev </code>
+				</section>
+
+				<section id="nextjs_new">
+					<div class="page-header">
+						<h3>New To Next.js?</h3>
+					</div>
+					<p>
+						If you’re new to Next.js, we recommend starting with the
+						following
+						<a
+							href="https://nextjs.org/learn/basics/getting-started"
+							target="_blank"
+							>course</a
+						>.
+					</p>
+					<p>
+						The interactive course with quizzes will guide you
+						through everything you need to know to use Next.js.
+					</p>
+				</section>
+
+				<section id="production_deploy">
+					<div class="page-header">
+						<h3>Deploy in Production</h3>
+					</div>
+
+					<h4>Vercel (Recommended)</h4>
+					<p>
+						The easiest way to deploy Next.js to production is to
+						use the
+						<a href="https://vercel.com/">Vercel platform</a> from
+						the creators of Next.js. Vercel is an all-in-one
+						platform with Global CDN supporting static & JAMStack
+						deployment and Serverless Functions. To read more
+						details, please
+						<a href="https://nextjs.org/docs/deployment"
+							>Click Here</a
+						>.
+					</p>
+
+					<h4>More Useful Links-</h4>
+					<p>
+						<a
+							href="https://www.digitalocean.com/community/tutorials/how-to-deploy-a-next-js-app-to-app-platform"
+							>https://www.digitalocean.com/community/tutorials/how-to-deploy-a-next-js-app-to-app-platform</a
+						>
+					</p>
+
+					<p>
+						<a href="https://www.netlify.com/with/nextjs/"
+							>https://www.netlify.com/with/nextjs/</a
+						>
+					</p>
+
+					<p>
+						<a
+							href="https://scotch.io/tutorials/easily-deploy-a-fullstack-nextjs-app-with-vercel"
+							>https://scotch.io/tutorials/easily-deploy-a-fullstack-nextjs-app-with-vercel</a
+						>
+					</p>
+
+					<p>
+						<a href="https://vercel.com/solutions/nextjs"
+							>https://vercel.com/solutions/nextjs</a
+						>
+					</p>
+				</section>
+
+				<section id="supports">
+					<div class="page-header">
+						<h3 style="margin-top: 0; margin-bottom: 12px">
+							24-Hour Turnaround Support
+						</h3>
+					</div>
+
+					<p>Quick, Dedicated & Professional Support!</p>
+
+					<p>
+						We only provide support through our ticketing system.
+						Please submit your ticket by visiting the
+						<a
+							href="https://support.hibootstrap.com/"
+							target="_blank"
+							>HiBootstrap Support System</a
+						>.
+					</p>
+
+					<p>
+						For any pre-purchase query, please use live chat on the
+						item demo site also, email, and the item’s comment
+						section on ThemeForest. Thanks!
+					</p>
+				</section>
+			</article>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container-fluid">
+				<a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<p>Copyright &copy; 2022. All right reserved</p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<ul class="footer-menu">
+							<li>
+								<a
+									href="https://support.hibootstrap.com/"
+									target="_blank"
+									>Contact us</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
