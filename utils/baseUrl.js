@@ -2,6 +2,6 @@
 //   ? process.env.BASE_URL
 //   : "http://localhost:3000";
 
-const baseUrl = "https://courseshappynotes.vercel.app";
+const baseUrl = "http://localhost:3000";
 
 export default baseUrl;
