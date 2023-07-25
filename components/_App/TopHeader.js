@@ -21,9 +21,6 @@ const TopHeader = ({ user }) => {
 					<div className="col-lg-4">
 						<ul className="header-right-content">
 							<li>
-								<Link href="/become-an-instructor">
-									<a>Become An Instructor</a>
-								</Link>
 							</li>
 							<li className="auth-link">
 								{user ? (

@@ -111,9 +111,7 @@ const Navbar = ({ user }) => {
                           href="/become-an-instructor"
                           activeClassName="active"
                         >
-                          <a onClick={toggleNavbar} className="nav-link">
-                            Become An Instructor
-                          </a>
+
                         </Link>
                       </motion.li>
                     )
@@ -126,14 +124,6 @@ const Navbar = ({ user }) => {
                       }}
                       whileTap={{ scale: 0.9 }}
                     >
-                      <Link
-                        href="/become-an-instructor"
-                        activeClassName="active"
-                      >
-                        <a onClick={toggleNavbar} className="nav-link">
-                          Become An Instructor
-                        </a>
-                      </Link>
                     </motion.li>
                   )}
                 </ul>

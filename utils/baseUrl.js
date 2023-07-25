@@ -2,6 +2,6 @@
 //   ? process.env.BASE_URL
 //   : "http://localhost:3000";
 
-const baseUrl = "https://courseshappynotes.vercel.app";
+const baseUrl = "https://app.happynotesmusic.co/";
 
 export default baseUrl;
