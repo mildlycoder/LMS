@@ -46,7 +46,6 @@ const Navbar = ({ user }) => {
             <div className="navbar navbar-expand-lg navbar-light">
               <Link href="/">
                 <a onClick={toggleNavbar} className="navbar-brand">
-                  <img src="/images/logo.png" alt="logo" />
                 </a>
               </Link>
 
