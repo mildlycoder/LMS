@@ -123,7 +123,14 @@ const RegisterForm = () => {
         loading={loading}
         disabled={disabled}
         btnText="Register Now"
-        btnClass="default-btn"
+        btnClass="default-btn mb-2"
+      />
+      <h3 className="text-center">or</h3>
+      <Button 
+      loading={loading}
+      disabled={disabled}
+      btnText="Register With Google"
+      btnClass="default-btn mt-2"
       />
     </motion.form>
   );

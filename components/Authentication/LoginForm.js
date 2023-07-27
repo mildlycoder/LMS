@@ -102,6 +102,13 @@ const LoginForm = () => {
 				btnText="Login Now"
 				btnClass="default-btn"
 			/>
+			<h3 className="text-center">or</h3>
+			<Button
+				loading={loading}
+				disabled={disabled}
+				btnText="Login with Google"
+				btnClass="default-btn"
+			/>
 		</motion.form>
 	);
 };
