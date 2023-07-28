@@ -19,9 +19,9 @@ export const handleLogin = async (t, routeNext) => {
   }
 
   if (routeNext.query && routeNext.query.next) {
-    Router.push(routeNext.query.next);
+    return Router.push(routeNext.query.next);
   } else {
-    Router.push("/");
+    return Router.push("/");
   }
 };
 

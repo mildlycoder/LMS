@@ -20,6 +20,7 @@
     "bunnycdn-stream": "^2.2.0",
     "framer-motion": "^7.3.4",
     "fslightbox-react": "^1.6.2-2",
+    "googleapis": "^123.0.0",
     "html-to-image": "^1.10.8",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^8.5.1",

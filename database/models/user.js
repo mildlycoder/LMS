@@ -26,6 +26,11 @@ if (!mongoose.models.User) {
         enum: ["student", "admin", "instructor"],
         default: "student",
       },
+      authType: {
+        type: String,
+        enum: ["google", "email"],
+        default: "email",
+      },
       email_confirmed: { type: Boolean, default: false },
       email_confirmed_at: { type: Date },
       instructor_request: { type: Boolean, default: false },
