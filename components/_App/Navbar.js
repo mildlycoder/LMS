@@ -93,38 +93,6 @@ const Navbar = ({ user }) => {
                       </a>
                     </Link>
                   </motion.li>
-
-                  {user ? (
-                    !user.instructor_request && (
-                      <motion.li
-                        className="nav-item"
-                        whileHover={{
-                          scale: 1.1,
-                          transition: {
-                            duration: 0.5,
-                          },
-                        }}
-                        whileTap={{ scale: 0.9 }}
-                      >
-                        <Link
-                          href="/become-an-instructor"
-                          activeClassName="active"
-                        >
-
-                        </Link>
-                      </motion.li>
-                    )
-                  ) : (
-                    <motion.li
-                      className="nav-item"
-                      whileHover={{
-                        scale: 1.1,
-                        transition: { duration: 0.5 },
-                      }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                    </motion.li>
-                  )}
                 </ul>
               </div>
 
