@@ -60,6 +60,7 @@ const verifyForgotPasswordLink = async (req, res) => {
     const passwordHash = await bcrypt.hash(password, 10);
 
     user.password = passwordHash;
+    user.reset_password_token = null;
     await user.save();
 
     return res.status(200).json({
