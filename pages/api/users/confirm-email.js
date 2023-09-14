@@ -54,7 +54,7 @@ const userEmailConfirm = async (req, res) => {
     // console.error(error)
     res.status(400).json({
       error_code: "email_confirmation",
-      message: e.message,
+      message: error.message,
     });
   }
 };
