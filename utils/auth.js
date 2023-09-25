@@ -21,7 +21,7 @@ export const handleLogin = async (t, routeNext) => {
   if (routeNext.query && routeNext.query.next) {
     return Router.push(routeNext.query.next);
   } else {
-    return Router.push("/");
+    return Router.push("/courses");
   }
 };
 
