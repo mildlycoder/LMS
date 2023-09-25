@@ -35,6 +35,7 @@ const handlePost = async (req, res) => {
     is_preview,
     short_id,
     courseId,
+    description
   } = req.body;
   try {
     const { userId } = jwt.verify(
@@ -53,6 +54,7 @@ const handlePost = async (req, res) => {
       short_id,
       courseId,
       userId,
+      description
     });
 
     console.log(newVideo);

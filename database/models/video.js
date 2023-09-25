@@ -20,6 +20,9 @@ if (!mongoose.models.Video) {
         ref: "Course",
         required: true,
       },
+      description: {
+        type: String,
+      },
     },
     {
       timestamps: {
