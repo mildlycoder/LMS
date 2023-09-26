@@ -225,7 +225,7 @@ const index = ({ user }) => {
 				</div>
 			</div>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

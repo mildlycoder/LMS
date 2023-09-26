@@ -182,7 +182,7 @@ const modalInSiteLoading = ({ user }) => {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

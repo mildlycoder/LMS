@@ -125,7 +125,7 @@ const Create = ({ user }) => {
 				</div>
 			</div>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

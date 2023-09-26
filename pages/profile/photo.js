@@ -187,7 +187,7 @@ const Photo = ({ user }) => {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

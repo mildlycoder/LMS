@@ -273,7 +273,7 @@ Default Btn Area Style*/
 }
 
 .default-btn.active:hover {
-  background-color: #098b99;
+  background-color: #4A52FF;
 }
 
 .default-btn:hover {
@@ -909,7 +909,7 @@ Navbar Area Style
   width: 17px;
   height: 17px;
   line-height: 18px;
-  background: linear-gradient(133.65deg, #6CC17E 2.24%, #098B99 100%);
+  background: #4A52FF;
   color: #ffffff;
   text-align: center;
   border-radius: 50%;
@@ -1399,7 +1399,7 @@ Banner Area Style
 }
 
 .banner-content .search-form .default-btn::before {
-  background: linear-gradient(312.38deg, #6CC17E 2.65%, #098B99 98.23%);
+  background: #4A52FF;
 }
 
 .banner-content .search-form .default-btn i {
@@ -1611,7 +1611,7 @@ Courses Area Style
 .single-courses .courses-content h4 {
   font-size: 25px;
   letter-spacing: -1px;
-  background: linear-gradient(315deg, #098B99 0%, #057FA8 100%);
+  background: #4A52FF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1641,7 +1641,7 @@ Courses Area Style
 }
 
 .single-courses .courses-hover-content {
-  background: linear-gradient(134.32deg, #6CC17E -19.8%, #098B99 100%);
+  background: #4A52FF;
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -1734,7 +1734,7 @@ Courses Area Style
 .single-courses .courses-hover-content .courses-btn .default-btn.wish {
   padding: 3px 11px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0f6c76), to(#0f6c76));
-  background-image: linear-gradient(#0f6c76, #0f6c76);
+  background-image: #4A52FF;
 }
 
 .single-courses .courses-hover-content .courses-btn .default-btn.wish i {
@@ -1809,7 +1809,7 @@ Courses Area Style
   right: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(315deg, #098B99 0%, #057FA8 100%);
+  background: #4A52FF;
   border-radius: 50%;
   z-index: -1;
   -webkit-transition: all ease 0.5s;
@@ -1875,7 +1875,7 @@ Courses Area Style
   right: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(315deg, #098B99 0%, #057FA8 100%);
+  background: #4A52FF;
   border-radius: 50%;
   z-index: -1;
   -webkit-transition: all ease 0.5s;
@@ -1979,7 +1979,7 @@ Categorie Area Style
   width: 0;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(315deg, #098B99 0%, #057FA8 100%);
+  background: #4A52FF;
   border-radius: 5px;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -2230,7 +2230,7 @@ Features Area Style
   height: 60px;
   line-height: 60px;
   text-align: center;
-  background: linear-gradient(315deg, #098B99 0%, #057FA8 100%);
+  background: #4A52FF;
   -webkit-box-shadow: 0px 2px 20px rgba(0, 113, 220, 0.1);
           box-shadow: 0px 2px 20px rgba(0, 113, 220, 0.1);
   color: #ffffff;
@@ -2774,7 +2774,7 @@ Footer Area Style
 Pages Banner Area Style
 ======================================================*/
 .pages-banner-area {
-  background: linear-gradient(96.41deg, #6CC17E 10.61%, #098B99 70.66%);
+  background: #4A52FF;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -3239,7 +3239,7 @@ Instructor Details Area Style
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: linear-gradient(133.65deg, #6CC17E 2.24%, #098B99 100%);
+  background: #4A52FF;
   color: #ffffff;
   display: inline-block;
   border-radius: 50px;
@@ -3524,7 +3524,7 @@ Register Area Style
 }
 
 .register-tab .nav-item .nav-link.active {
-  background: linear-gradient(133.65deg, #6CC17E 2.24%, #098B99 100%);
+  background:#4A52FF;
   color: #ffffff;
 }
 
@@ -3768,7 +3768,7 @@ FAQ Area CSS
 }
 
 .faq-tab .nav-item .nav-link.active {
-  background: linear-gradient(133.65deg, #6CC17E 2.24%, #098B99 100%);
+  background: #4A52FF;
   color: #ffffff;
 }
 
@@ -3998,7 +3998,7 @@ Blog Details Area CSS
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background: linear-gradient(133.65deg, #6CC17E 2.24%, #098B99 100%);
+  background: #4A52FF;
   color: #ffffff;
   border-radius: 50px;
   -webkit-transition: all ease 0.5s;

@@ -15,7 +15,7 @@ const checkout = ({ user }) => {
         activePageText="Checkout"
       />
       <CheckoutForm user={user} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

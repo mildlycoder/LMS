@@ -15,7 +15,7 @@ const becomeInstructor = ({ user }) => {
 				activePageText="Become Instractor"
 			/>
 			<RegisterForm user={user} />
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

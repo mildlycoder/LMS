@@ -164,7 +164,7 @@ const privacyPolicy = ({ user }) => {
 				</div>
 			</section>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

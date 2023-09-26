@@ -55,7 +55,7 @@ const courseDeatails = ({ user }) => {
 				activePageText={course && course.title}
 			/>
 			{course && <CoursesDetailsContent user={user} course={course} />}
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };
