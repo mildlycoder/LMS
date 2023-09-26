@@ -20,7 +20,19 @@ const CoursesDetailsContent = ({ user: current_user, course }) => {
 		user,
 		enrolments,
 	} = course;
-
+	console.log({
+		title,
+		slug,
+		overview,
+		what_you_will_learn,
+		who_is_this_course_for,
+		requirements,
+		is_class,
+		updated_at,
+		category,
+		user,
+		enrolments
+	})
 	return (
 		<div className="course-details-area ptb-100">
 			<div className="container">

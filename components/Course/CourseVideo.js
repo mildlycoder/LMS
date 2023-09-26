@@ -5,19 +5,21 @@ import React, { useEffect, useState } from "react";
 import FsLightbox from "fslightbox-react";
 
 const CourseVideo = ({ courseSlug }) => {
-	// console.log(courseSlug);
+	console.log(courseSlug);
 	const [videos, setVideos] = useState([]);
 	const [preview, setPreview] = useState("");
 	const [toggler, setToggler] = useState(false);
 	useEffect(() => {
 		const fetchVideos = async () => {
+			
 			const url = `${baseUrl}/api/learnings/videos/${courseSlug}`;
+			console.log(url)
 			const response = await axios.get(url);
 			setVideos(response.data.videos);
 		};
 		fetchVideos();
 	}, [courseSlug]);
-
+	console.log(videos)
 	return (
 		<>
 			<div className="courses-curriculum">
@@ -34,15 +36,7 @@ const CourseVideo = ({ courseSlug }) => {
 											{secondsToHms(v.video_length)}
 										</span>
 										{v.is_preview ? (
-											<span
-												className="status"
-												onClick={() => {
-													setPreview(v.video);
-													setToggler(!toggler);
-												}}
-											>
-												preview
-											</span>
+											<div></div>
 										) : (
 											<span
 												className="status locked"
