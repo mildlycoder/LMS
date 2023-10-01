@@ -22,22 +22,26 @@ const handleGetRequest = async (req, res) => {
       req.headers.authorization,
       process.env.JWT_SECRET
     );
+    console.log(userId);
     const courses = await Favourite.find({ userId: userId })
-      .sort({ created_at: -1 })
+      .sort({
+        created_at: -1,
+      })
       .populate({
-        path: "course",
+        path: "courseId",
         populate: {
-          path: "user",
+          path: "userId",
           select: "first_name last_name profile_photo",
         },
       })
-      .populate("course.enrolments", "id");
+      .populate("courseId.enrolments", "id");
 
-    res.status(200).json({
+    return res.status(200).json({
       courses,
     });
   } catch (e) {
-    res.status(400).json({
+    console.log(e);
+    return res.status(400).json({
       error_code: "get_my_courses",
       message: e.message,
     });
