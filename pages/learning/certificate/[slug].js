@@ -135,7 +135,7 @@ const slug = ({ user }) => {
 				</div>
 			</div>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

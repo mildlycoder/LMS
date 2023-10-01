@@ -5,6 +5,12 @@ const RichTextEditor = dynamic(() => import("@mantine/rte"), {
   ssr: false,
   loading: () => null,
 });
+
+const ReactQuill = dynamic(() => import("react-quill"), {
+	ssr: false,
+	loading: () => null,
+});
+import 'react-quill/dist/quill.snow.css';
 import axios from "axios";
 import { parseCookies } from "nookies";
 import baseUrl from "@/utils/baseUrl";
@@ -367,31 +373,23 @@ const CourseCreateForm = ({ btnText, is_class }) => {
         <div className="col-md-6">
           <div className="form-group">
             <label className="form-label fw-semibold">Overview</label>
-            <RichTextEditor
-              controls={controls}
-              value={course.overview}
-              onChange={(e) =>
-                setCourse((prevState) => ({
-                  ...prevState,
-                  overview: e,
-                }))
-              }
-            />
+            <ReactQuill theme="snow" value={course.overview}
+						onChange={(e) =>
+								setCourse((prevState) => ({
+									...prevState,
+									overview: e,
+								}))} />
           </div>
         </div>
         <div className="col-md-6">
           <div className="form-group">
             <label className="form-label fw-semibold">Requirements</label>
-            <RichTextEditor
-              controls={controls}
-              value={course.requirements}
-              onChange={(e) =>
-                setCourse((prevState) => ({
-                  ...prevState,
-                  requirements: e,
-                }))
-              }
-            />
+            <ReactQuill theme="snow" value={course.requirements}
+						onChange={(e) =>
+								setCourse((prevState) => ({
+									...prevState,
+									requirements: e,
+								}))} />
           </div>
         </div>
         <div className="col-md-6">
@@ -399,16 +397,12 @@ const CourseCreateForm = ({ btnText, is_class }) => {
             <label className="form-label fw-semibold">
               What You Will Learn
             </label>
-            <RichTextEditor
-              controls={controls}
-              value={course.what_you_will_learn}
-              onChange={(e) =>
-                setCourse((prevState) => ({
-                  ...prevState,
-                  what_you_will_learn: e,
-                }))
-              }
-            />
+            <ReactQuill theme="snow" value={course.what_you_will_learn}
+						onChange={(e) =>
+								setCourse((prevState) => ({
+									...prevState,
+									what_you_will_learn: e,
+								}))} />
           </div>
         </div>
         <div className="col-md-6">
@@ -416,16 +410,12 @@ const CourseCreateForm = ({ btnText, is_class }) => {
             <label className="form-label fw-semibold">
               Who Is This Course For?
             </label>
-            <RichTextEditor
-              controls={controls}
-              value={course.who_is_this_course_for}
-              onChange={(e) =>
-                setCourse((prevState) => ({
-                  ...prevState,
-                  who_is_this_course_for: e,
-                }))
-              }
-            />
+            <ReactQuill theme="snow" value={course.who_is_this_course_for}
+						onChange={(e) =>
+								setCourse((prevState) => ({
+									...prevState,
+									who_is_this_course_for: e,
+								}))} />
           </div>
         </div>
 

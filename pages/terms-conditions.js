@@ -160,7 +160,7 @@ const termsConditions = ({ user }) => {
 					</div>
 				</div>
 			</section>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

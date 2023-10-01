@@ -89,7 +89,7 @@ const Index = ({
 				</div>
 			</div>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

@@ -87,7 +87,7 @@ const aboutUs = ({ user }) => {
 
 			<Business />
 
-			<Footer />
+			{/* <Footer /> */} 
 		</>
 	);
 };

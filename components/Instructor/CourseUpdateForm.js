@@ -5,6 +5,11 @@ const RichTextEditor = dynamic(() => import("@mantine/rte"), {
 	ssr: false,
 	loading: () => null,
 });
+const ReactQuill = dynamic(() => import("react-quill"), {
+	ssr: false,
+	loading: () => null,
+});
+import 'react-quill/dist/quill.snow.css';
 import axios from "axios";
 import { parseCookies } from "nookies";
 import baseUrl from "@/utils/baseUrl";
@@ -31,7 +36,7 @@ const INITIAL_VALUE = {
 const CourseUpdateForm = ({ courseData }) => {
 	const { edmy_users_token } = parseCookies();
 	const [course, setCourse] = useState(INITIAL_VALUE);
-	const [disabled, setDisabled] = React.useState(true);
+	const [disabled, setDisabled] = React.useState(false);
 	const [loading, setLoading] = React.useState(false);
 	const [categories, setCategories] = useState([]);
 	const [imagePreview, setImagePreview] = React.useState("");
@@ -402,16 +407,12 @@ const CourseUpdateForm = ({ courseData }) => {
 						<label className="form-label fw-semibold">
 							Overview
 						</label>
-						<RichTextEditor
-							controls={controls}
-							value={course.overview}
-							onChange={(e) =>
+						<ReactQuill theme="snow" value={course.overview}
+						onChange={(e) =>
 								setCourse((prevState) => ({
 									...prevState,
 									overview: e,
-								}))
-							}
-						/>
+								}))} />
 					</div>
 				</div>
 				<div className="col-md-6">
@@ -469,7 +470,6 @@ const CourseUpdateForm = ({ courseData }) => {
 				<div className="col-12">
 					<Button
 						loading={loading}
-						disabled={disabled}
 						btnText="Update Course"
 						btnClass="default-btn"
 					/>

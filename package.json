@@ -38,6 +38,7 @@
     "react-hot-toast": "^2.3.0",
     "react-jutsu": "^3.0.3",
     "react-loading-skeleton": "^3.1.0",
+    "react-quill": "^2.0.0",
     "react-redux": "^8.0.2",
     "react-sticky-box": "^1.0.2",
     "react-stripe-checkout": "^2.6.3",

@@ -130,7 +130,7 @@ export default function FAQPage({ user }) {
 
 			<Business />
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

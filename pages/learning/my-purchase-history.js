@@ -143,7 +143,7 @@ function myPurchases({ user }) {
 				</div>
 			</div>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

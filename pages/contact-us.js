@@ -19,7 +19,7 @@ const contactUs = ({ user }) => {
 			<ContactInfo />
 			<ContactForm />
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

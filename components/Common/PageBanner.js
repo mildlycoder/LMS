@@ -62,22 +62,6 @@ const PageBanner = ({
 						</motion.ul>
 					</div>
 				</div>
-
-				<img
-					src="/images/page-banner-shape-1.svg"
-					className="shape shape-1"
-					alt="courses"
-				/>
-				<img
-					src="/images/page-banner-shape-2.svg"
-					className="shape shape-2"
-					alt="courses"
-				/>
-				<img
-					src="/images/page-banner-shape-3.svg"
-					className="shape shape-3"
-					alt="courses"
-				/>
 			</div>
 		</>
 	);

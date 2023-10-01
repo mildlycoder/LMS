@@ -42,7 +42,7 @@ export default function CoursesPage({ user }) {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
